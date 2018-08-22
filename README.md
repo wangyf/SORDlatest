@@ -16,8 +16,9 @@ The Support Operator Rupture Dynamics (SORD) code simulates spontaneous rupture 
 motions are computed on a logically rectangular hexahedral mesh, using the generalized finite difference method of support operators. Stiffness and viscous hourglass corrections are employed to suppress suppress zero-energy grid oscillation modes. The fault surface is modeled by coupled double nodes, where the strength of the coupling is determined by a linear slip-weakening friction law. External boundaries may be reflective or absorbing, where absorbing boundaries are handled using the method of perfectly matched layers (PML). The hexahedral mesh can accommodate non-planar ruptures and surface topography SORD simulations are configured with Python scripts. Underlying computations are coded in Fortran 95 and parallelized for multi-processor execution using Message Passing Interface (MPI). The code is portable and tested with a variety of Fortran 95 compilers, MPI implementations, and operating systems (Linux, Mac OS X, IBM AIX, SUN Solaris). The source code is stored [Ely's github](https://elygeo.net/coseis/index.html#sord)
 
 ## Publications
-1. (Ely, G. P., Day, S. M., and Minster, J.-B. (2008), A support-operator method for viscoelastic wave modelling in 3-D heterogeneous media, Geophys. J. Int., 172(1), 331-344)[doi.org/10.1111/j.1365-246X.2007.03633.x)
+1. (Ely, G. P., Day, S. M., and Minster, J.-B. (2008), A support-operator method for viscoelastic wave modelling in 3-D heterogeneous media, Geophys. J. Int., 172(1), 331-344)[doi.org/10.1111/j.1365-246X.2007.03633.x]
 2. (Ely, G. P., Day, S. M., and Minster, J.-B. (2009), A support-operator method for 3-D rupture dynamics, Geophys. J. Int., 177(3), 1140-1150)[doi.org/10.1111/j.1365-246X.2009.04117.x]
+
 3. (Ely, G. P., Day, S. M., and Minster, J.-B. (2010), Dynamic Rupture Models for the Southern San Andreas Fault, Bull. Seismol. Soc. Am., 100(1), 131-150)[doi.org/10.1785/0120090187]
 
 
