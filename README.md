@@ -5,11 +5,11 @@ SORD latest version maintained by Yongfei Wang
 Since Zheqiang Shi, Brittany Erickson, Qian Yao and Yongfei Wang joined Steven Day's rupture dynamics group, a new branch of SORD has been developed. Currently, Yongfei Wang is the chief maintainer who use it as a simulator of a physically plausible earthquake to study earthquake parameters and its evolution. This github repository stores this branch.
 
 ## Publications
-1.Shi, Z. Q., and Day, S. M. (2013), Rupture dynamics and ground motion from 3-D rough-fault simulations, J. Geophys. Res., 118(3), 1122-1141, doi:10.1002/jgrb.50094.
+-Shi, Z. Q., and Day, S. M. (2013), Rupture dynamics and ground motion from 3-D rough-fault simulations, J. Geophys. Res., 118(3), 1122-1141, doi:10.1002/jgrb.50094.
 
-2.Erickson, B. A., and Day, S. M. (2016), Bimaterial effects in an earthquake cycle model using rate-and-state friction, J. Geophys. Res., 121(4), 2480-2506, doi:10.1002/2015jb012470.
+-Erickson, B. A., and Day, S. M. (2016), Bimaterial effects in an earthquake cycle model using rate-and-state friction, J. Geophys. Res., 121(4), 2480-2506, doi:10.1002/2015jb012470.
 
-3. Wang, Y., and Day, S. M. (2017), Seismic source spectral properties of crack-like and pulse-like modes of dynamic rupture, J. Geophys. Res., 122(8), 6657-6684, doi:10.1002/2017jb014454.
+-Wang, Y., and Day, S. M. (2017), Seismic source spectral properties of crack-like and pulse-like modes of dynamic rupture, J. Geophys. Res., 122(8), 6657-6684, doi:10.1002/2017jb014454.
 
 ## original SORD
 The Support Operator Rupture Dynamics (SORD) code simulates spontaneous rupture within a 3D isotropic viscoelastic solid. Wave
