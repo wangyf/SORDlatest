@@ -1,0 +1,5 @@
+Jobid: 989481
+qsub -A GMSeismicSim -t 0:10:00 --proccount 3904 --mode c4 -n 976 -O elastic ./sord-mO
+Sat Dec 31 04:47:08 2016 +0000 (UTC) submitted with cwd set to: /gpfs/mira-home/wangyf/local/sord/scripts/test/elastic
+jobid 989481 submitted from terminal /dev/pts/62
+Sat Dec 31 05:11:15 2016 +0000 (UTC) Info: user delete requested; removing job from the queue
