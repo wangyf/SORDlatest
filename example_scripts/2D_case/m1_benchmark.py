@@ -33,6 +33,26 @@ npml = 2
 faultnormal = 2
 
 # boundary conditions
+'''
+Type 0: Vacuum free-surface. Stress is zero in cells outside the boundary
+Type 3: Rigid surface. Displacement is zero at the boundary.
+Type 1: Mirror symmetry at the node. Normal displacement is zero at the
+        boundary. Useful for a boundary corresponding to (a) the plane orthogonal
+        to the two nodal planes of a double-couple point source, (b) the plane
+        normal to the mode-III axis of a symmetric rupture, or (c) the zero-width
+        axis of a 2D plane strain problem.
+Type -1: Anti-mirror symmetry at the node. Tangential displacement is
+        zero at the boundary. Useful for a boundary corresponding to (a) the nodal
+        planes of a double-couple point source, (b) the plane normal to the
+        mode-II axis of a symmetric rupture, or (c) the zero-width axis of a 2D
+        antiplane strain problem.
+Type 2: Mirror symmetry at the cell. Same as type 1, but centered on the
+        cell.
+Type -2: Anti-mirror symmetry at the cell. Same as type -1, but centered
+        on the cell. Can additionally be used when the boundary corresponds to
+        the slip surface of a symmetric rupture.
+Type 10: Perfectly match layer (PML) absorbing boundary.        
+'''
 bc1 = 10, 10, 1 
 bc2 = 10, 10, 1
 
