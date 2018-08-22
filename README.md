@@ -6,12 +6,12 @@ Since Zheqiang Shi, Brittany Erickson, Qian Yao and Yongfei Wang joined Steven D
 
 ## Publications
 1. [Shi, Z. Q., and Day, S. M. (2013), Rupture dynamics and ground motion from 3-D rough-fault simulations, J. Geophys. Res., 118(3), 1122-1141](doi.org/10.1002/jgrb.50094)
-
 2. [Erickson, B. A., and Day, S. M. (2016), Bimaterial effects in an earthquake cycle model using rate-and-state friction, J. Geophys. Res., 121(4), 2480-2506](doi.org/10.1002/2015jb012470)
-
 3. (Wang, Y., and Day, S. M. (2017), Seismic source spectral properties of crack-like and pulse-like modes of dynamic rupture, J. Geophys. Res., 122(8), 6657-6684)[doi.org/10.1002/2017jb014454]
+4. (Wang, Y., Day, S. M. and Denolle, M. A. (2018), Geometric Controls on Pulse-like Rupture in a Dynamic Model of the 2015 Gorkha Earthquake, J. Geophys. Res., *submitted*)
 
-## original SORD
+
+## Original SORD
 The Support Operator Rupture Dynamics (SORD) code simulates spontaneous rupture within a 3D isotropic viscoelastic solid. Wave
 motions are computed on a logically rectangular hexahedral mesh, using the generalized finite difference method of support operators. Stiffness and viscous hourglass corrections are employed to suppress suppress zero-energy grid oscillation modes. The fault surface is modeled by coupled double nodes, where the strength of the coupling is determined by a linear slip-weakening friction law. External boundaries may be reflective or absorbing, where absorbing boundaries are handled using the method of perfectly matched layers (PML). The hexahedral mesh can accommodate non-planar ruptures and surface topography SORD simulations are configured with Python scripts. Underlying computations are coded in Fortran 95 and parallelized for multi-processor execution using Message Passing Interface (MPI). The code is portable and tested with a variety of Fortran 95 compilers, MPI implementations, and operating systems (Linux, Mac OS X, IBM AIX, SUN Solaris). The source code is stored in [Ely's github](https://elygeo.net/coseis/index.html#sord)
 
