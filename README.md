@@ -1,7 +1,7 @@
 # SORDlatest
 SORD latest version maintained by Yongfei Wang
 
-E=mc^2
+<a href="https://www.codecogs.com/eqnedit.php?latex=E=mc^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E=mc^2" title="E=mc^2" /></a>
 
 ## New branch
 Since Zheqiang Shi, Brittany Erickson, Qian Yao and Yongfei Wang joined Steven Day's rupture dynamics group, a new branch of SORD has been developed. Currently, Yongfei Wang is the chief maintainer who use it as a simulator of a physically plausible earthquake to study earthquake parameters and its evolution. This github repository stores this branch.
