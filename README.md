@@ -23,3 +23,7 @@ motions are computed on a logically rectangular hexahedral mesh, using the gener
 
 ## Development logs
 - Aug 21, 2018 Add frequency-dependent attenuation (to be checked by AWP benchmark)
+
+## Bug found and fixed
+
+*If you found a bug in this program, you are so welcome to report it.*
