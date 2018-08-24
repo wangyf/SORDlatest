@@ -39,6 +39,8 @@ motions are computed on a logically rectangular hexahedral mesh, using the gener
 
 ## Bug found and fixed
 - [ ] Bug in computing radiated energy, negative value
-- [ ]
+
+- [ ] means bug found
+- [x] means bug found has been fixed
 
 *If you found a bug in this program, you are so welcome to report it.*
