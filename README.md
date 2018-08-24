@@ -7,7 +7,7 @@ Since Zheqiang Shi, Brittany Erickson, Qian Yao and Yongfei Wang joined Steven D
 
 ## Publications
 
-1. [Ben-Zion, Y., Rockwell, T. K., Shi, Z. Q., and Xu, S. Q. (2012), Reversed-polarity secondary deformation structures near fault stepovers, J. Appl. Mech., 79(3), 031025](doi.org/10.1115/1.4006154)
+1. [Ben-Zion, Y., Rockwell, T. K., Shi, Z. Q., and Xu, S. Q. (2012), Reversed-polarity secondary deformation structures near fault stepovers, J. Appl. Mech., 79(3), 031025](http://doi.org/10.1115/1.4006154)
 2. [Shi, Z. Q., and Day, S. M. (2013), Rupture dynamics and ground motion from 3-D rough-fault simulations, J. Geophys. Res., 118(3), 1122-1141](doi.org/10.1002/jgrb.50094)
 3. [Wang, Y., and Day, S. M. (2017), Seismic source spectral properties of crack-like and pulse-like modes of dynamic rupture, J. Geophys. Res., 122(8), 6657-6684](doi.org/10.1002/2017jb014454)
 4. Wang, Y., Day, S. M. and Denolle, M. A. (2018), Geometric Controls on Pulse-like Rupture in a Dynamic Model of the 2015 Gorkha Earthquake, J. Geophys. Res., *submitted*
