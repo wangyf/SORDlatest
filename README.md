@@ -30,8 +30,9 @@ motions are computed on a logically rectangular hexahedral mesh, using the gener
 - [Vyas, J. C., Mai, P. M., and Galis, M. (2016), Distance and azimuthal dependence of ground-motion variability for unilateral strike-slip ruptures, Bull. Seismol. Soc. Am., 106(4), 1584-1599](doi.org/10.1785/0120150298)
 - [Mai, P., Galis, M., Thingbaijam, K., Vyas, J., and Dunham, E. (2017), Accounting for Fault Roughness in Pseudo-Dynamic Ground-Motion Simulations, Pure. Appl. Geophys., 174(9), 3419-3450](doi.org/10.1007/s00024-017-1536-8)
 - [Song, S. G., and Dalguer, L. A. (2017), Synthetic Source Inversion Tests with the Full Complexity of Earthquake Source Processes, Including Both Supershear Rupture and Slip Reactivation, Pure. Appl. Geophys., 174(9), 3393-3418](doi.org/10.1007/s00024-017-1514-1)
+- [Passone, L., and Mai, P. M. (2017), Kinematic Earthquake Ground-Motion Simulations on Listric Normal Faults, Bull. Seismol. Soc. Am., 107(6), 2980-2993](doi.org/10.1785/0120170111)
 - [Vyas, J. C., Mai, P. M., Galis, M., Dunham, E. M., and Imperatori, W. (2018), Mach wave properties in the presence of source and medium heterogeneity, Geophys. J. Int., 214(3), 2035-2052](doi.org/10.1093/gji/ggy219)
-- [
+- [Harris, R. A., et al. (2018), A Suite of Exercises for Verifying Dynamic Earthquake Rupture Codes, Seismol. Res. Lett., 89(3), 1146-1162](doi.org/10.1785/0220170222)
 
 ## Development logs
 - Aug 21, 2018 Add frequency-dependent attenuation (to be checked by AWP benchmark)
