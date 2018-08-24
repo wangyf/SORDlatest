@@ -2,9 +2,10 @@
 # @Author: yow004
 # @Date:   2018-08-20 03:30:02
 # @Last Modified by:   yow004
-# @Last Modified time: 2018-08-20 13:25:10
+# @Last Modified time: 2018-08-23 15:43:24
 #!/usr/bin/env python
 import SORDlatest                         # import the sord module
+#debug = 1
 rundir = 'run'                            # directory location for output
 dx = 100.0, 100.0, 100.0                  # spatial step length in x, y, and z
 dt = 0.0075                               # time step length
@@ -28,10 +29,14 @@ fieldio = [                               # field variable input and output
     ( '=w', 'attr12',[0,0,31,0],'attr12'),
 ]                                 
 ihypo = 31.0, 31.0, 31.0                  # source location
-source = 'potency'                        # source type
-source1 = 1e6, 1e6, 1e6                   # source normal components
-source2 = 0.0, 0.0, 0.0                   # source shear components
-timefunction = 'brune'                    # source time function
+source = 'fault'                        # source type
+strike = 60
+dip = 60
+rake = 30
+m0 = 1e5
+#source1 = 1e6, 1e6, 1e6                   # source normal components
+#source2 = 0.0, 0.0, 0.0                   # source shear components
+timefunction = 'cos'                    # source time function
 period = 6 * dt                           # source dominant period
 attenuation = 'anelastic'                 # anelastic setup
 fac = 1									  # transition frequency
