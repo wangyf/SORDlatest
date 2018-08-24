@@ -54,6 +54,12 @@ if ( modulo( it, itstats ) == 0 ) then
     umax = maxval( s1 )
 end if
 call fieldio( '>', 'um2', s1  )
+! note: 
+!it = 1 tm = 0
+!it = 2 tm = 0
+!it = 3 tm = dt ...
+
+
 
 ! Fault time integration
 if ( ifn /= 0 ) then

@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+# @Author: yow004
+# @Date:   2018-08-18 01:41:21
+# @Last Modified by:   yow004
+# @Last Modified time: 2018-08-23 15:29:21
 #!/usr/bin/env python
 """
 Default simulation parameters
@@ -107,12 +112,16 @@ fp = 1.0			# reference frequency (velocity of input media)
 ivols = 'no'
 
 # Finite source parameters
-source = 'potency'		# 'moment', 'potency', 'force', or 'none'
+source = 'none'		# 'moment', 'potency', 'force','fault', or 'none'
 nsource = 0			# number of sub-faults
 
 # Point source parameters
 source1 = 0.0, 0.0, 0.0		# normal components
 source2 = 0.0, 0.0, 0.0		# shear components
+strike = 90.
+dip = 90.
+rake = 0.
+m0 = 1.e16                # N.m (Mw4.6)
 timefunction = 'none'		# time function, see util.f90 for details.
 period = 10 * dt		# dominant period
 

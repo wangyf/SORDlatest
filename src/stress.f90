@@ -208,10 +208,18 @@ if ( attenuation == 'anelastic') then
 end if
 
 ! Add moment source to stress
-if ( source == 'moment' ) then
+if ( source == 'moment') then
     call finite_source
     call tensor_point_source
 end if
+
+! Add fault plane solution (first convert to moment tensor) to stress
+if ( source == 'fault') then
+    call finite_source
+    call fault_moment_tensor
+    call tensor_point_source
+end if
+
 
 if ( eplasticity == 'plastic' ) then 
 

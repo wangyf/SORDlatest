@@ -59,6 +59,7 @@ jp = jp + 1
 mptimer = 0.0
 iotimer = 0.0
 prof(1,jp) = timer(5)
+if (debug > 0 .and. master) write(0,'(A,F10.5,A)') 'Time stamp: ', tm, ' sec'
 call timestep            ; if (sync) call barrier ; prof(1,jp) = timer(5)
 call stress              ; if (sync) call barrier ; prof(2,jp) = timer(5)
 call acceleration        ; if (sync) call barrier ; prof(3,jp) = timer(5)

@@ -206,6 +206,8 @@ case( 'ddgaussian', 'ricker2' )
     time_function = (1.0 - 2.0 * t) * exp( -t )
 case( 'sin' )
     if ( tm < period ) time_function = 0.5*pi/period*sin(pi*tm/period)
+case( 'cos' )
+    if ( tm < period ) time_function = 1 - 0.5*pi/period*sin(pi*tm/period)
 case( 'liu' ) !corresponding to liu and archuleta 2004 when p = 2.5
     if (tm <=period ) time_function = 65.18986469044035914/period * &
                        (tm/period)**2.5*(1-tm/period)**(5-2.5)

@@ -175,5 +175,35 @@ end do
 end do
 end subroutine
 
+
+subroutine fault_moment_tensor
+use m_globals
+real, parameter :: deg2rad = pi/180.
+
+real :: msource1(3),msource2(3)
+
+if (debug > 2 .and. master) write(0,*) 'Convert fault parameter (strike, dip, rake) to moment tensor'
+
+!Aki and Richard (2002) Box 4.4
+msource1(1) =-m0*(sin(dip * deg2rad) * cos(rake * deg2rad) * sin(2 * strike * deg2rad) + &
+                  sin(2 * dip * deg2rad) * sin(rake * deg2rad) * sin(strike * deg2rad)**2)
+msource1(2) = m0*(sin(dip * deg2rad) * cos(rake * deg2rad) * sin(2*strike*deg2rad) -  &
+                 sin(2*dip*deg2rad) * sin(rake*deg2rad)*cos(strike*deg2rad)**2)
+msource1(3) = m0* sin(2*dip*deg2rad)*sin(rake*deg2rad)
+
+msource2(1) =-m0*(cos(dip*deg2rad)*cos(rake*deg2rad)*sin(strike*deg2rad) - &
+                  cos(2*dip*deg2rad)*sin(rake*deg2rad)*cos(strike*deg2rad))
+
+msource2(2) =-m0*(cos(dip*deg2rad)*cos(rake*deg2rad)*cos(strike*deg2rad) + &
+                  cos(2*dip*deg2rad)*sin(rake*deg2rad)*sin(strike*deg2rad))
+
+msource2(3) = m0*(sin(dip*deg2rad)*cos(rake*deg2rad)*cos(2*strike*deg2rad)+ &
+                0.5*sin(2*dip*deg2rad)*sin(rake*deg2rad)*sin(2*strike*deg2rad))
+
+source1 = msource1
+source2 = msource2
+
+end subroutine
+
 end module
 
