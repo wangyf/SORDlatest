@@ -20,6 +20,12 @@ motions are computed on a logically rectangular hexahedral mesh, using the gener
 2. [Ely, G. P., Day, S. M., and Minster, J.-B. (2009), A support-operator method for 3-D rupture dynamics, Geophys. J. Int., 177(3), 1140-1150](doi.org/10.1111/j.1365-246X.2009.04117.x)
 3. [Ely, G. P., Day, S. M., and Minster, J.-B. (2010), Dynamic Rupture Models for the Southern San Andreas Fault, Bull. Seismol. Soc. Am., 100(1), 131-150](doi.org/10.1785/0120090187)
 
+## Publications in which SORD is used
+- [Fan, W. Y., Shearer, P. M., and Gerstoft, P. (2014), Kinematic earthquake rupture inversion in the frequency domain, Geophys. J. Int., 199(2), 1138-1160](doi.org/10.1093/gji/ggu319)
+- [Vyas, J. C., Mai, P. M., and Galis, M. (2016), Distance and azimuthal dependence of ground-motion variability for unilateral strike-slip ruptures, Bull. Seismol. Soc. Am., 106(4), 1584-1599](doi.org/10.1785/0120150298)
+- [Mai, P., Galis, M., Thingbaijam, K., Vyas, J., and Dunham, E. (2017), Accounting for Fault Roughness in Pseudo-Dynamic Ground-Motion Simulations, Pure. Appl. Geophys., 174(9), 3419-3450](doi.org/10.1007/s00024-017-1536-8)
+- [Vyas, J. C., Mai, P. M., Galis, M., Dunham, E. M., and Imperatori, W. (2018), Mach wave properties in the presence of source and medium heterogeneity, Geophys. J. Int., 214(3), 2035-2052](doi.org/10.1093/gji/ggy219)
+- 
 
 ## Development logs
 - Aug 21, 2018 Add frequency-dependent attenuation (to be checked by AWP benchmark)
