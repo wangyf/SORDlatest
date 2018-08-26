@@ -126,13 +126,25 @@ if ( it == nt .and. dofault) then
         estats(5,1) = strdropint
         estats(6,1) = slipint
         call rreduce2( gestats, estats, 'sum', ip2root )
-    if (master) then   
-      write(0,'(A,ES20.10,A)') 'strain Energy is ',gestats(2,1),' J'
-      write(0,'(A,ES20.10,A)') 'Frictional+Fracture Energy is ',gestats(1,1),' J'
-      write(0,'(A,ES20.10,A)') 'Radiation Energy is ',gestats(4,1),' J'
-      write(0,'(A,ES20.10,A)') 'Moment is ',gestats(3,1), ' J'
+    if (master) then
+      if(debug > 1)  then 
+      write(0,'(A,ES20.10,A)') 'Strain Energy is ',gestats(2,1),' Nm'
+      write(0,'(A,ES20.10,A)') 'Frictional+Fracture Energy is ',gestats(1,1),' Nm'
+      write(0,'(A,ES20.10,A)') 'Radiation Energy is ',gestats(4,1),' Nm'
+      write(0,'(A,ES20.10,A)') 'Moment is ',gestats(3,1), ' Nm'
       write(0,'(A,F10.6,A)') 'Moment magnitude is ',( log10( gestats(3,1) ) - 9.05 ) / 1.5
       write(0,'(A,F10.6,A)') 'Energy stress drop is', gestats(5,1)/gestats(6,1)/1e6,' MPa'
+      end if
+
+      open( 1, file='stats/energetics.py', status='replace' )
+      write(1,'(A,ES20.10,A)') 'Strain Energy is ',gestats(2,1),' Nm'
+      write(1,'(A,ES20.10,A)') 'Frictional+Fracture Energy is ',gestats(1,1),' Nm'
+      write(1,'(A,ES20.10,A)') 'Radiation Energy is ',gestats(4,1),' Nm'
+      write(1,'(A,ES20.10,A)') 'Moment is ',gestats(3,1), ' Nm'
+      write(1,'(A,F10.6,A)') 'Moment magnitude is ',( log10( gestats(3,1) ) - 9.05 ) / 1.5
+      write(1,'(A,F10.6,A)') 'Energy stress drop is', gestats(5,1)/gestats(6,1)/1e6,' MPa'
+      close(1)
+      
     end if
 end if
 
