@@ -137,6 +137,8 @@ if ( it == nt .and. dofault) then
       end if
 
       open( 1, file='stats/energetics.py', status='replace' )
+      write(1,'(A)') 'Energetics Statistics'
+      write(1,'(A)') 
       write(1,'(A,ES20.10,A)') 'Strain Energy is ',gestats(2,1),' Nm'
       write(1,'(A,ES20.10,A)') 'Frictional+Fracture Energy is ',gestats(1,1),' Nm'
       write(1,'(A,ES20.10,A)') 'Radiation Energy is ',gestats(4,1),' Nm'
