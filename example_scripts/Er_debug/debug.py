@@ -2,7 +2,7 @@
 # @Author: yow004
 # @Date:   2018-08-23 19:24:14
 # @Last Modified by:   yow004
-# @Last Modified time: 2018-08-23 19:26:28
+# @Last Modified time: 2018-08-25 22:46:37
 #!/usr/bin/env python
 
 """
@@ -74,7 +74,7 @@ fieldio += [
 
 
 # nucleation
-rnucl = 1000.
+rnucl = 100.
 delts = 0.38 
 tmnucl = -1. 
 

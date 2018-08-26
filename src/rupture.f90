@@ -1,6 +1,7 @@
 ! Rupture boundary condition
 module m_rupture
 implicit none
+real,private :: lastvalue
 contains
 
 ! Rupture initialization
@@ -24,6 +25,7 @@ if ( ifn /= 0 ) then
     area = sign( 1, faultnormal ) * sqrt( sum( nhat * nhat, 4 ) )
  
     t0 = 0.
+    lastvalue = 0.
 end if 
 
 if ( ivols == 'yes' .and. ifn /= 0) then
@@ -888,7 +890,9 @@ t2(:,:,1,:) = vv(j3:j4,k3:k4,irup+1,:) - vv(j1:j2,k1:k2,irup,:) + &
 end select
 f2 = sum( t1 * t2, 4 ) * area
 call set_halo( f2, 0.0, i1core, i2core )
-efric = efric + dt * sum( f2 )
+
+efric = efric + dt * (sum( f2 ) + lastvalue)/2
+lastvalue = sum( f2 )
 
 ! Strain energy
 t2 = uu(j3:j4,k3:k4,l3:l4,:) - uu(j1:j2,k1:k2,l1:l2,:)
