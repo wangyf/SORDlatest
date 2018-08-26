@@ -42,8 +42,7 @@ motions are computed on a logically rectangular hexahedral mesh, using the gener
 - Aug 23, 2018 Add a function to exert a point source by setting strike, dip, rake and moment.
 
 ## Bug found and fixed
-- [x] Bug in computing radiated energy, negative value
-#### The temporal 
+- [x] Bug in computing radiated energy, negative value (change temporal integral of fracture (+frictional) energy from rectangular to trapezoidal shape.
 
 ### legend
 - [ ] means bug found
