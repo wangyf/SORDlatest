@@ -3,4 +3,4 @@
 - Previously, if an earthquake fails to happen with inproper parameters, the moment computed and cast on screen finally is very small (~1e10 Nm numerical error). At this point, the computed radiated energy will be negative.
 
 - Solved
- Wrongly computing initial stress 
+change temporal integral of fracture (+frictional) energy from rectangular to trapezoidal shape.
