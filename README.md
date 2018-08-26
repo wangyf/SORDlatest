@@ -1,6 +1,25 @@
 # SORDlatest
+## 3D Support Operator Rupture Dynamics
 --------------------------------------------------
 SORD latest version maintained by Yongfei Wang
+
+## Functional feature
+
+### Materials:
+- [x] Viscoelastic
+- [x] Plastoelastic
+- [x] Frequency-dependent Anelastic
+
+### Constitutive law
+- [x] Slip-weakening
+- [x] Regularized rate and state
+- [ ] Thermal and porelastic response
+
+### Geometric structure
+- [x] Nonplanar fault
+- [x] Topographic effect
+- [ ] Multiple-fault system
+
 
 ## New branch
 Since Zheqiang Shi, Brittany Erickson, Qian Yao and Yongfei Wang joined Steven Day's rupture dynamics group, a new branch of SORD has been developed. Currently, Yongfei Wang is the chief maintainer who use it as a simulator of a physically plausible earthquake to study earthquake parameters and its evolution. This github repository stores this branch.
