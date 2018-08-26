@@ -22,7 +22,7 @@ SORD latest version maintained by Yongfei Wang
 
 
 ## New branch
-Since Zheqiang Shi, Brittany Erickson, Qian Yao and Yongfei Wang joined Steven Day's rupture dynamics group, a new branch of SORD has been developed. Currently, Yongfei Wang is the chief maintainer who uses it as a simulator of a physically plausible earthquake to study earthquake parameters and its evolution. This github repository stores this branch.
+Since [Zheqiang Shi](https://www.scec.org/user/zheqians), [Brittany Erickson](http://www.web.pdx.edu/~be3/Home.html), [Qian Yao]() and Yongfei Wang joined Steven Day's rupture dynamics group, a new branch of SORD has been developed. Currently, Yongfei Wang is the chief maintainer who uses it as a simulator of a physically plausible earthquake to study earthquake parameters and its evolution. This github repository stores this branch.
 
 ## Publications
 
