@@ -96,7 +96,7 @@ case( 'vrup' );         read( str, *, iostat=ios ) key, op, vrup
 case( 'rcrit' );        read( str, *, iostat=ios ) key, op, rcrit
 case( 'trelax' );       read( str, *, iostat=ios ) key, op, trelax
 case( 'nstage' );       read( str, *, iostat=ios ) key, op, nstage; &
-						allocate(vrupstage(nstage),sizestage(nstage))
+			allocate(vrupstage(nstage),sizestage(nstage))
 case( 'vrupstage' );    read( str, *, iostat=ios ) key, op, vrupstage
 case( 'sizestage' );    read( str, *, iostat=ios ) key, op, sizestage
 case( 'rrelax' );       read( str, *, iostat=ios ) key, op, rrelax
