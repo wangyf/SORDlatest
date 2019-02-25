@@ -63,6 +63,7 @@ motions are computed on a logically rectangular hexahedral mesh, using the gener
 ## Bug found and fixed
 - [x] Bug in computing radiated energy, negative value (change temporal integral of fracture (+frictional) energy from rectangular to trapezoidal shape.)
 - [ ] Bug in applying -R for reading initial stress tensor or bulk materials of cells (small variations after reading in) and may affect elastoplastic rupture dynamics 
+- [ ] Bug in PML zone when plasticity and rate and state law are applied. (Perhaps the rupture occures in PML zone)
 
 ### legend
 - [ ] means bug found
