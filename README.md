@@ -11,8 +11,9 @@ SORD latest version maintained by Yongfei Wang
 - [x] Frequency-dependent Anelastic
 
 ### Constitutive law
-- [x] Slip-weakening
+- [x] Slip weakening
 - [x] Regularized rate and state
+- [x] Rate strengthening Slip weakening
 - [ ] Thermal and porelastic response
 
 ### Geometric structure
