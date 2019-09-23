@@ -32,6 +32,74 @@ Since [Zheqiang Shi](https://www.scec.org/user/zheqians), [Brittany Erickson](ht
 3. [Wang, Y., and Day, S. M. (2017), Seismic source spectral properties of crack-like and pulse-like modes of dynamic rupture, J. Geophys. Res., 122(8), 6657-6684](http://doi.org/10.1002/2017jb014454)
 4. [Wang, Y., Day, S. M. and Denolle, M. A. (2018), Geometric Controls on Pulse-like Rupture in a Dynamic Model of the 2015 Gorkha Earthquake, J. Geophys. Res., 124(2), 1544–1568](https://doi.org/10.1029/2018JB016602)
 
+## Installation
+##SORD installation instructions
+
+Obtain Source Code
+Clone the code: git clone --recursive https://github.com/billtr0n/sord
+Configure installation
+Create machine configuration directory in conf, by copying default to your machine name. here its called example_machine; (Hint: You might have to enter -o on the very for x86-compilers)
+Edit example_machine/conf.py with your machine information. you can also add scripts in templates that you want added to the rundir.
+Go to dir conf/ and execute python conf.py example_machine
+Go to root directory
+Run python configure.py example_machine, example out output might look like
+SDSC Comet
+
+dtype = '<f4'
+email = 'wsavran@gmail.com'
+fortran_flags = {'O': '-O3 -qstrict', 'p': '-O3 -qstrict', 't': '-O3 -qstrict', 'g': '-O3 -qstrict'}
+fortran_mpi = ('mpifort',)
+fortran_serial = ('ifort',)
+host = 'comet-ln2.sdsc.edu'
+hosts = ('miralac1',)
+infiles = ()
+itbuff = 10
+login = 'miralac1.fst.alcf.anl.gov'
+machine = 'comet'
+maxcores = 24
+maxnodes = 1944
+maxram = 131072
+maxtime = (24, 0)
+minnodes = 1
+mode = None
+optimize = 'O'
+os_ = ('Linux', 'comet-ln2.sdsc.edu', '2.6.32-573.12.1.el6.x86_64', '#1 SMP Tue Dec 15 21:19:08 UTC 2015', 'x86_64')
+post = ''
+pre = ''
+prepare = True
+queue = None
+rate = 600000.0
+run = False
+rundir = 'run'
+user = 'breuera'
+
+#####Build Code
+
+Automatic build: Run python setup.py in the root dir
+Manual build: Go to src, edit the makefile according to your machine and execute make.
+#####Install Python interface
+
+Run python setup.py install, example output (Hint: Don't rename your git-repo name for the installation):
+Installing /oasis/projects/nsf/sds143/breuera/software/build/lib/python2.6/site-packages/sord.pth
+for path /oasis/projects/nsf/sds143/breuera/sord
+Note: On Linux Mint 18, sord was installed in /usr/bin/python2.7/dist-packages with incorrect permissions. If you are unable to import sord in a python interpreter after running python setup.py install try checking permissions and running chmod -R o+rx sord before you install the python interface.
+
+Running an example
+#####Configure Job
+
+Go to scripts/example
+Change sim.py and add your work-directory for this run.
+Run python sim.py, use python sim.py --force if you want to overwrite an already existing directory.
+#####Launch Job
+
+Execute simulation. example mpirun -np 2 ./sord-mO
+#####Visualize Results
+
+Plot results using python plot.py
+Requirements
+Python, Numpy
+
+
 
 ## Original SORD
 The Support Operator Rupture Dynamics (SORD) code simulates spontaneous rupture within a 3D isotropic viscoelastic solid. Wave
